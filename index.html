@@ -1,83 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to my space!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio Anos 90</title>
     <style>
-        html {
-            font-family: "Times New Roman", sans-serif;
-        }
-
         body {
-            background-color: #294135;
-            color: #e7e6e6;
-        }
-
-        .col-12 {
-            width: 100%;
-            float: left;
-        }
-
-        .row::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
-
-        .navbar {
-            list-style-type: none;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #e0e4e8;
+            color: #333;
             margin: 0;
             padding: 0;
-            background-color: #57707a;
-        }
-
-        .center-block {
-            margin: 0 auto;
-            width: 415px;
-        }
-
-        .center-text {
             text-align: center;
         }
-
-        a {
-            color: #62cdd1;
+        header {
+            background: linear-gradient(to right, #ff00ff, #00ffff);
+            color: white;
+            padding: 20px;
+            border-bottom: 3px solid #000;
         }
-
+        header h1 {
+            font-family: 'Comic Sans MS', cursive;
+            font-size: 3em;
+            margin: 0;
+        }
+        nav {
+            background-color: #000;
+            padding: 10px;
+            margin: 0;
+        }
+        nav a {
+            color: #00ff00;
+            text-decoration: none;
+            font-size: 1.5em;
+            margin: 0 20px;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ff00ff;
+        }
+        section {
+            margin: 30px 0;
+            padding: 20px;
+        }
+        .projetos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .projeto {
+            background-color: #fff;
+            border: 3px solid #000;
+            width: 250px;
+            margin: 15px;
+            padding: 10px;
+            box-shadow: 5px 5px #00ff00;
+        }
+        .projeto h3 {
+            font-family: 'Arial Black', Gadget, sans-serif;
+            color: #ff00ff;
+        }
         footer {
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+            font-family: 'Courier New', Courier, monospace;
             position: relative;
-            bottom: 5px;
-            padding: 15px;
-            padding-top: 100px;
+            bottom: 0;
+            width: 100%;
+            border-top: 3px solid #ff00ff;
         }
     </style>
 </head>
 <body>
-    <div class="row">
-        <div class="col-3"></div>
-        <div class="col-6 center">
-            <div class="center-block">
-                <main>
-                    <h1>Your Title</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus quis varius quam quisque id diam vel quam elementum. Feugiat nisl pretium fusce id velit ut tortor pretium. Feugiat nibh sed pulvinar proin gravida hendrerit. Urna condimentum mattis pellentesque id nibh tortor id aliquet lectus. Vitae turpis massa sed elementum tempus egestas sed sed risus. Commodo ullamcorper a lacus vestibulum sed arcu non. Vivamus arcu felis bibendum ut tristique et egestas quis. Aenean euismod elementum nisi quis eleifend quam adipiscing vitae. Dictum fusce ut placerat orci. Tortor posuere ac ut consequat.</p>
-                </main>
-            </div>
-        </div>
-        <div class="col-3"></div>
-    </div>
-        </div>
-        <div class="col-3"></div>
-    </div>
 
-    <div class="row">
-        <div class="col-3"></div>
-        <div class="col-6">
-            <small>
-                <footer class="center-text">Some more content can go here.</footer>
-            </small>
+<header>
+    <h1>Portfólio dos Anos 90</h1>
+</header>
+
+<nav>
+    <a href="#sobre">Sobre Mim</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#contato">Contato</a>
+</nav>
+
+<section id="sobre">
+    <h2>Sobre Mim</h2>
+    <p>Olá, meu nome é [Seu Nome]. Sou um desenvolvedor apaixonado pela estética retrô e pelo visual dos anos 90.</p>
+</section>
+
+<section id="projetos">
+    <h2>Projetos</h2>
+    <div class="projetos">
+        <div class="projeto">
+            <h3>Projeto 1</h3>
+            <p>Descrição do projeto com uma vibe anos 90!</p>
         </div>
-        <div class="col-3"></div>
+        <div class="projeto">
+            <h3>Projeto 2</h3>
+            <p>Outro projeto incrível que lembra a era dos primórdios da web.</p>
+        </div>
+        <div class="projeto">
+            <h3>Projeto 3</h3>
+            <p>Esse projeto mostra minhas habilidades com a estética da década de 90.</p>
+        </div>
     </div>
+</section>
+
+<section id="contato">
+    <h2>Contato</h2>
+    <p>Entre em contato: <a href="mailto:seuemail@example.com">seuemail@example.com</a></p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Seu Nome. Todos os direitos reservados.</p>
+</footer>
+
 </body>
 </html>
